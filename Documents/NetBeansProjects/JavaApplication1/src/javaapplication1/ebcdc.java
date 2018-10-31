@@ -34,6 +34,9 @@ public class ebcdc {
         JLabel DateOfBirthlabel=new JLabel("Date of Birth: ");
         JTextField dateofbirth=new JTextField();
         dateofbirth.setColumns(25);
+        JLabel ClearLabel=new JLabel("Clear:");
+        JTextField Clear=new JTextField();
+        Clear.setColumns(25);
         JLabel genderLabel=new JLabel("Gender:");
         JRadioButton gender=new JRadioButton();
         gender.setSelected(false);
@@ -41,7 +44,9 @@ public class ebcdc {
         JRadioButton male=new JRadioButton();
         JRadioButton femalebutton=new JRadioButton("FEMALE");
         JRadioButton female=new JRadioButton();
-        JButton clear=new JButton("CLEAR");
+        JLabel NationalityLabel=new JLabel("Nationality");
+        JTextField Nationality=new JTextField();
+        Nationality.setColumns(25);
         JButton saveuser=new JButton("Save User");
         mypanel.add(FirstNamelabel);
         mypanel.add(FirstName);
@@ -49,14 +54,20 @@ public class ebcdc {
         mypanel.add(LastName);
         mypanel.add(DateOfBirthlabel);
         mypanel.add(dateofbirth);
+        mypanel.add(Telephonelabel);
+        mypanel.add(Telephone);
+         mypanel.add(Clear);
+        mypanel.add(ClearLabel);
         mypanel.add(genderLabel);
         mypanel.add(gender);
         mypanel.add(malebutton);
         mypanel.add(male);
         mypanel.add(femalebutton);
         mypanel.add(female);
-        myframe.add(mypanel);
-        myframe.setSize(1800,1800);
+        mypanel.add(NationalityLabel);
+        mypanel.add(Nationality);
+       myframe.add(mypanel);
+        myframe.setSize(400,300);
         myframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         myframe.setVisible(true);
         
