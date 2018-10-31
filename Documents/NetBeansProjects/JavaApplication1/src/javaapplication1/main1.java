@@ -6,34 +6,35 @@ package javaapplication1;
  * @author benja
  */
 import javax.swing.*;
-import java.awt.*;
-import java.awt.*;
 
 public class main1 {
 
-        public static void main(String[] args) {
-           
-        JFrame myframe;
-        myframe = new JFrame("Login");
-        JPanel mypanel=new JPanel();
-        JLabel usernamelabel=new JLabel("Username: ");
-        JTextField username=new JTextField();
-        username.setColumns(25);
-        JLabel passwordlabel=new JLabel("Password: ");
-        JTextField password=new JTextField();
-        password.setColumns(25);
-        JButton clear=new JButton("Clear");
-        JButton login=new JButton("Login");
-        mypanel.add(usernamelabel);
-        mypanel.add(username);
-        mypanel.add(passwordlabel);
-        mypanel.add(password);
+   
+        public static void main(String[] a) {
+        
+        JFrame myframe =new JFrame("LOGin");
+         JPanel mypanel=new JPanel();
+        JPanel panel=new JPanel();
+        JLabel UsernameLabel=new JLabel("USERNAME");
+        JTextField Username=new JTextField();
+        Username.setColumns(20);
+        JLabel PasswordLabel=new JLabel("PASSWORD");
+        JTextField Password=new JTextField();
+        Password.setColumns(20);
+        JButton login=new JButton("LOGIN");
+        JCheckBox check=new JCheckBox();
+        JButton clear=new JButton("CLEAR");
+        JCheckBox check2=new JCheckBox();
+        mypanel.add(UsernameLabel);
+        mypanel.add(Username);
+        mypanel.add(PasswordLabel);
+        mypanel.add(Password);
         mypanel.add(clear);
         mypanel.add(login);
-        myframe.add(mypanel);
-        myframe.setSize(400,400);
+        mypanel.add(panel);
+        mypanel.add(mypanel);
+        myframe.setSize(700,500);
         myframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        myframe.setVisible(true);
+        myframe.setVisible(true); 
     }
-        ;
 } 
